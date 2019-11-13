@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var num = 3;
+        var text="Задание №1";
+        alert(text);
+        alert(num);
+
+        var text="Задание №2";
+        var a = 10,b = 2;
+        alert(text);
+        alert(a + b);
+        alert(a - b);
+        alert(a * b);
+        alert(a / b);
+
+        var text="Задание №3";
+        var c = 15; d = 2;
+        var result = c + d;
+        alert(text);
+        alert(result);
+
+        var text="Задание №4";
+        var a = 10,
+            b = 2,
+            c = 5;
+        alert(text);
+        alert(a + b + c);
+
+        var text="Задание №5";
+        var a = 17,
+            b = 10,
+            c = a - b,
+            d = 7,
+            result = c + d;
+        alert(text);
+        alert(result);
+
+        var text="Задание №6";
+        var str = "Привет,Мир!";
+        alert(text);
+        alert(str);
+
+        var text="Задание №7";
+        var str1 = "Привет,",
+            str2 = "Мир!";
+        alert(text);
+        alert(str1 + str2);
+
+        var text="Задание №8";
+        var name = "Max";
+        alert(text);
+        alert("Привет," + name);
+
+        var text="Задание №9";
+        var age = 19;
+        alert(text);
+        alert("Мне " + age + " лет!");
+
+        var text="Задание №10";
+        alert(text);
+        var name = prompt("Ваше имя?");
+        alert("Ваше имя - " + name);
+
+        var text="Задание №11";
+        alert(text);
+        var num = prompt("Введите число по вашему желанию!");
+        alert("Квадрат вашего числа = " + num*num);
+
+        var text="Задание №12";
+        alert(text);
+        var str = "abcde";
+        alert(str[0]);
+        alert(str[2]);
+        alert(str[4]);
+        
+        var text="Задание №13";
+        alert(text);
+        var num = "12345";
+        alert(num[0]*num[1]*num[2]*num[3]*num[4]);
+        
+        var text="Задание №14";
+        alert(text);
+        var sec1 = 60*60,
+            sec2 = 60*60*24,
+            sec3 = 60*60*24*30;
+        alert("Количество секунд в часе = " + sec1);
+        alert("Количество секунд в сутках = " + sec2);
+        alert("Количество секунд в месяце = " + sec3);
+
+        var text="Задание №15";
+        alert(text); 
+        var date = new Date(),
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+        alert(hours + ":" + minutes + ":" + seconds); 
+        
+        var text="Задание №16";
+        alert(text);
+        var  num = 12;
+        alert(Math.pow(num,2)) ;
+
+        var text="Задание №17";
+        alert(text); 
+        var num = 47;
+        num += 7;
+        num -= 18;
+        num *= 10;
+        num /= 15;
+        alert(num);
+
+        var text="Задание №18";
+        alert(text);
+        var num = 10;
+        alert(num++);
+        alert(++num);
+        num--;
+        alert(num);
+
+        var text="Задание №19";
+        alert(text);
+        var pi = 3.14; 
+        var num = prompt("Введите радиус круга :");
+        alert("Площадь круга = " + (pi * Math.pow(num,2))); 
+
+        var text="Задание №20";
+        alert(text);
+        var a = prompt("Введите первый катет = ");
+            b = prompt("Введите второй катет = ");
+        alert("Гипотенуза = " + Math.sqrt(a*a+b*b));
+    </script>
+</body>
+</html>

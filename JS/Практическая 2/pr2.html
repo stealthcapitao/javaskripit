@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// let text = "Задание №1";
+		// alert(text);
+		// let a = prompt("Введите пароль :");
+		// 	if (a == "9583" || a == "1747" ) {
+		// 		alert("Вам достыпны модули баз А,В и С");
+		// 	}
+		// 	else if (a == "3331" || a == "7922"){
+		// 		alert("Вам доступны модули баз В и С");
+		// 		}
+		// 	else
+		// 		if ( a == "9455" || a == "8997" ) {
+		// 			alert("Вам доступны модуль базы С");
+		// 		}
+		// 	else {
+		// 		alert("Вам не доступны базы!");
+		// 	}
+
+		// let text1 = "Задание №2";
+		// alert(text1);
+		// let a1 = +prompt("Введите число 11");
+		// if (a1 == 11) {
+		// 	alert("Введенное значение верно");
+		// }
+		// else {
+		// 	alert("Введенное значение неверно");
+		// }
+
+		// alert("Задание №3");
+		// let name = prompt("Введите имя :");
+		// if (name == "") {
+		// 	alert("Привет, незнакомец!");
+		// }
+		// else {
+		// 	alert(`Привет, ${name}!`);
+		// }
+		
+		// alert("Задание №4");
+		// let b = prompt("Введите значение b :"),
+		// 	c = prompt("Введите значение с :"),
+		// 	max = 0;
+		// (b > c) ? (max = b):(max = c);
+		// alert(`max = ${max}`);	
+
+		// alert("Задание №5");
+		// let d = 3.5, e = 5.6, f = 6.2;
+		// if ((d < f) && (f < e)) {
+		// 	d *= 2;
+		// 	e *= 2;
+		// 	f *= 2;
+		// }
+		// else {
+		// 	d *= -1;
+		// 	e *= -1;
+		// 	f *= -1;
+		// }
+		// alert(`d = ${d}` + `\ne = ${e}` + `\nf = ${f}`);	
+
+		// alert("Задание №6");
+		// let hh = +prompt("Во сколько прибыл поезд на станцию в часах :"),
+		// 	mm = +prompt("Во сколько прибыл поезд на станцию в минуты :"),
+		// 	ms = +prompt("Стоянка поезда в минутах:"),
+		// 	hp = +prompt("Во сколько пришел пассажир на станцию в часах :"),
+		// 	mp = +prompt("Во сколько пришел пассажир на станцию в минутах :"),
+		// 	 t = hh*60+mm+ms;
+		// 	 p = hp*60+mp;
+		// if (p > t) {
+		// 	alert("Пассажир опоздал на поезд!");
+		// }
+		// else if (p >= (t-ms) && p <= t) {
+		// 	alert("Поезд стоит на платформе!");
+		// }
+		// else {
+		// 	alert("Пассажир пришел до прибытия поезда!");
+		// }
+
+		// alert("Задание №7");
+		// let second = +prompt("Введите минуту(ы):");
+		// sec = second % 10;
+		// if ( (sec >= 0 && sec < 3) || (sec >=5 && sec < 8) ) {
+		// 	alert("Светофор горит зелёным цветом!");
+		// }
+		// else {
+		// 	alert("Светофор горит красный цветом!");
+		// }
+
+		// alert("Задание №8");
+		// let number = prompt("Введите число 1 или 2 :");
+		// switch(number){
+		// 	case "1":
+		// 		alert("Один");
+		// 		break;
+		// 	case "2":
+		// 		alert("Два");
+		// 		break;
+		// 	default:
+		// 		alert("Вы ввели значение, отличное от 1 и 2!"); 
+		// }
+
+		// alert ("Задание №9");
+		// let value = "2";
+		// switch (value) {
+		// 	case "1":
+		// 	case "2":
+		// 	case "3":
+		// 		alert("Hello");
+		// 		break;
+		// 	case "4":
+		// 	case "5":
+		// 		alert("World");
+		// 		break;
+		// 	default:
+		// 		alert("Error!")		
+		// }
+
+		// alert("Задание №10");
+		// let n = prompt("Введите номер месяца в диапозоне 1-12 :");
+		// switch (n){
+		// 	case "1":
+		// 	case "2":
+		// 	case "12":
+		// 		alert("Зима.");
+		// 		break;
+		// 	case "3":
+		// 	case "4":
+		// 	case "5":
+		// 		alert("Весна.");
+		// 		break;
+		// 	case "6":
+		// 	case "7":
+		// 	case "8":
+		// 		alert("Лето.");
+		// 		break;
+		// 	case "9":
+		// 	case "10":
+		// 	case "11":
+		// 		alert("Осень.");
+		// 		break;
+		// 	default:
+		// 		alert("Такого месяца нет.");
+		// 		break;			
+		// }
+
+		
+		// alert("Задание №12");
+		// let day = +prompt("Введите день:"),
+		// 	m = +prompt("Введите месяц:");	
+		// switch (m) {
+		// 	case 1:
+		// 		if (day >= 20) {alert("Водолей");}
+		// 		else {alert("Козерог");}
+		// 		break;
+		// 	case 2:
+		// 		if (day >= 19) {alert("Рыбы");}
+		// 		else {alert("Водолей");}
+		// 		break;
+		// 	case 3:
+		// 		if (day >= 21) {alert("Овен");}
+		// 		else {alert("Рыбы");}
+		// 		break;
+		// 	case 4:
+		// 		if (day >=20) {alert("Телец");}
+		// 		else {alert("Овен");}
+		// 		break;
+		// 	case 5:
+		// 		if (day >= 21) {alert("Близнецы");}
+		// 		else {alert("Телец");}
+		// 		break;
+		// 	case 6:
+		// 		if (day >= 22) {alert("Рак");}
+		// 		else {alert("Близнецы");}
+		// 		break;
+		// 	case 7:
+		// 		if (day >= 23) {alert("Лев");}
+		// 		else {alert("Рак");}
+		// 		break;
+		// 	case 8:
+		// 		if (day >= 23) {alert("Дева");}
+		// 		else {alert("Лев");}
+		// 		break;
+		// 	case 9:
+		// 		if (day >= 23) {alert("Весы");}
+		// 		else {alert("Дева");}
+		// 		break;
+		// 	case 10:
+		// 		if (day >= 23) {alert("Скорпион");}
+		// 		else {alert("Весы");}
+		// 		break;
+		// 	case 11:
+		// 		if (day >= 23) {alert("Стрелец");}
+		// 		else {alert("Скорпион");}
+		// 		break;
+		// 	case 12:
+		// 		if (day >= 22) {alert("Козерог");}
+		// 		else {alert("Стрелец");}
+		// 		break;
+		// 	default:
+		// 		alert("Такого месяца нет!");
+		// 		break;
+		// }
+
+		// alert("Задание №13");
+		// let ax, r1, r2, s;
+		// 	numeral = +prompt("Введите элемент от 1 до 4:");
+		// 	len = +prompt("Введите длину элемента:");
+		// switch (numeral) {
+		// 	case 1:
+		// 		ax = len;
+		// 		r1 = ax * Math.sqrt(3) / 6;
+		// 		r2 = 2 * r1;
+		// 		s = Math.pow(ax,2) * Math.sqrt(3) / 4;
+		// 		alert(`R1 = ${r1}` +`\nR2 = ${r2}`+ `\nS = ${s}`);
+		// 	break;
+		// 	case 2:
+		// 		r1 = len;
+		// 		ax = r1 * 6 / Math.sqrt(3);
+		// 		r2 = 2 * r1;
+		// 		s = Math.pow(ax,2) * Math.sqrt(3) / 4;
+		// 		alert(`A = ${ax}` +`\nR2 = ${r2}`+ `\nS = ${s}`);
+		// 	break;
+		// 	case 3:
+		// 		r2 = len;
+		// 		r1 = r2 / 2;
+		// 		ax = r1*6 / Math.sqrt(3);
+		// 		s = Math.pow(ax,2) * Math.sqrt(3) / 4;
+		// 		alert(`A = ${ax}` +`\nR1 = ${r1}`+ `\nS = ${s}`);
+		// 	break;
+		// 	case 4:
+		// 		s = len;
+		// 		ax = Math.sqrt(s * 4 / Math.sqrt(3));
+		// 		r1 = ax * Math.sqrt(3) / 6;
+		// 		r2 = 2 * r1;
+		// 		alert(`A = ${ax}` +`\nR1 = ${r1}`+ `\nR2 = ${r2}`);
+		// 	break;
+		// 	default:
+		// 		alert("Такого числа нет!");
+		// 		break;
+		// }
+
+		// 	alert("Задание №14");
+		// 	let move = prompt("Укажите исходное направление робота:"),
+		// 		team = +prompt("Укажите команду для робота :");
+		// 	switch (team) {
+		// 		case 1:
+		// 			switch (move) {
+		// 				case "С":
+		// 				alert("Робот смотрит на Восток!");
+		// 				break;
+		// 				case "Ю":
+		// 				alert("Робот смотрит на Запад!");
+		// 				break;
+		// 				case "З":
+		// 				alert("Робот смотрит на Север!");
+		// 				break;
+		// 				case "В":
+		// 				alert("Робот смотрит на Юг!");
+		// 				break;
+		// 				default:
+		// 				alert("Такого направления нет!");
+		// 				break;
+		// 			}
+		// 		break;
+		// 		case -1:
+		// 			switch (move) {
+		// 				case "С":
+		// 				alert("Робот смотрит на Запад!");
+		// 				break;
+		// 				case "Ю":
+		// 				alert("Робот смотрит на Восток!");
+		// 				break;
+		// 				case "З":
+		// 				alert("Робот смотрит на Юг!");
+		// 				break;
+		// 				case "В":
+		// 				alert("Робот смотрит на Север!");
+		// 				break;
+		// 				default:
+		// 				alert("Такого направления нет!");
+		// 				break;
+		// 			}
+		// 		break;
+		// 		case 0:
+		// 		alert(`Робот смотрит на ${move}!`);
+		// 		break;
+		// 		default:
+		// 		alert("Такой команды нет!");
+		// 		break;
+		// 	}
+
+		// alert("Задание №11");
+		// let year = +prompt("Введите год :"),
+		// 	animail = "";
+ 	// 	switch (year%10) {
+ 	// 	case 0:
+ 	// 	case 1:
+	 // 	animail = "Год бело";
+	 // 	break;
+ 	// 	case 2:
+ 	// 	case 3:
+ 	// 	animail = "Год черно";
+		// break;
+ 	// 	case 4:
+ 	// 	case 5:
+ 	// 	animail = "Год зелёно";
+		// break;
+ 	// 	case 6:
+		// case 7:
+ 	// 	animail = "Год красно";
+	 // 	break;
+ 	// 	case 8:
+ 	// 	case 9:
+		// animail = "Год жёлто";
+		// break;
+ 	// 	}
+
+		// switch ((year + 8) % 12) {
+		// case 0:
+		// animail += "й крысы\n";
+		// break;
+		// case 1:
+		// animail += "й коровы\n";
+		// break;
+		// case 2:
+		// animail += "го тигра\n";
+		// break;
+		// case 3:
+		// animail += "го зайца\n";
+		// break;
+		// case 4:
+		// animail += "го дракона\n";
+		// break;
+		// case 5:
+		// animail += "й змеи\n";
+		// break;
+		// case 6:
+		// animail += "й лошади\n";
+		// break;
+		// case 7:
+		// animail += "й овцы\n";
+		// break;
+		// case 8:
+		// animail += "й обезьяны\n";
+		// break;
+		// case 9:
+		// animail += "й курицы\n";
+		// break;
+		// case 10:
+		// animail += "й собаки\n";
+		// break;
+		// case 11:
+		// animail += "й свиньи\n";
+		// break;
+		// }
+		// alert(animail);
+
+	</script>
+</body>
+</html>

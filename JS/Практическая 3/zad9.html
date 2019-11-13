@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Введите целое число (N > 1):"),
+            a = 1,
+            b = 1,
+            i = 3,
+            c;
+        while (i <= n){
+            c = a + b;
+            a = b;
+            b = c;
+            i++;
+        }
+        document.write(`Чи́сла Фибона́ччи = ${b} <br>`);
+
+		let f0 = 0, 
+            f1 = 1;
+		document.write(`${f0} <br>`);
+		document.write(`${f1} <br><br>`);
+
+		while (n != f0) 
+		{
+			f0 += f1;
+			f1 += f0;
+			document.write(`${f0} <br>`);
+			document.write(`${f1} <br><br>`);
+			if (f1 >= n)
+				break;
+		}
+
+		if (n != f0 && n != f1)
+			document.write("FALSE")
+		else
+			document.write("TRUE");
+    </script>
+</body>
+</html>

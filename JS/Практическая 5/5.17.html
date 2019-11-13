@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Практическая 5</title>
+</head>
+<body>
+    <script>
+        let matr = [
+            [2, 2, 2, 2, 2],
+            [6, 7, 8, 9, 1],
+            [4, 4, 4, 4, 4],
+            [4, 3, 2, 1, 5]
+        ]
+
+        document.write(`Исходная матрица:<br>`)
+        for (let i = 0; i < 4; i++) {
+            for(let j = 0; j < 5; j++) {
+                document.write(`${matr[i][j]}  `);
+            }
+            document.write(`<br>`);
+        }
+
+        function str(matr) {
+            let kol = 0, str = 0;
+            for (let i = 0; i < 4; i++) {
+                for(let j = 0; j < 5; j++) {
+                    if(matr[i][j] % 2 == 0) {
+                        kol++;
+                    }
+                    if (kol == 5) {
+                        str = i;
+                    }
+                }
+                kol = 0;
+            }
+            return str + 1;
+        }
+        document.write(`${str(matr)}-ая строка последняя, которая содержит только четные элементы!`);
+    </script>
+</body>
+</html>

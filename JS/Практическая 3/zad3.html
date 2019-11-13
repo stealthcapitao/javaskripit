@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Введите количество набора:"),
+            k = prompt("Введите степень:"),
+            m;
+        for (let i = 0; i < n; i++) {
+            m = prompt("Введите число:");
+            document.write(`${m} в степени ${k} = ${Math.pow(m,k)}<br>`);
+        }
+    </script>
+</body>
+</html>

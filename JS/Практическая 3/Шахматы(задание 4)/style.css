@@ -1,0 +1,23 @@
+.main-block{
+	width: 810px;
+	height: 810px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+.block {
+	display: inline-flex;
+	width: 90px;
+	height: 90px;
+	font-size: 30px;
+	font-weight: bold;
+	justify-content: center;
+}
+
+.black {
+	background: black;
+	color: white;
+}
+.white {
+	background: white;
+	color: black;
+}

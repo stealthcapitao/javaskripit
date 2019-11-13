@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        function getRandomArbitrary(min, max) {
+            return (Math.random() * (max - min) + min).toFixed(2);
+        }
+        let mass = [],
+            ress = [],
+            n = prompt("Введите количество элементов в массиве (N > 2):"),
+            m = 1;
+        for ( let i = 0; i < n; i++) {
+            mass[i] = getRandomArbitrary(0, 10);
+            document.write(`${m} элемент = ${mass[i]} <br>`);
+            m++;
+        }
+        document.write(`mass {${mass}}<br><br>`); 
+        
+        let first;
+        for (i = 0; i < n; i++) {
+            if ((i == 0 || i == n-1) || (mass[i] > mass[i-1] && mass[i] > mass[i+1] || mass[i] < mass[i-1] && mass[i] < mass[i+1])) {
+                
+            }
+            else {
+                // ress.push(mass[i]);
+                // break;
+                if (!first)
+                    first = i;
+                console.log(first);
+            }
+        }
+        // document.write(`Элемент ${ress} не является пилообразным!`);
+        if (first)
+            document.write(`<br>${mass[first]} не является зубцом`);
+        else
+            document.write("<br>0");
+    </script>
+</body>
+</html>

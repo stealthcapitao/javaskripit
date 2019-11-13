@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Практическая 5</title>
+</head>
+<body>
+    <script>
+        let matr = [
+            [1, 2, 3, 4, 5],
+            [6, 7, 8, 9, 0],
+            [9, 8, 7, 6, 5],
+            [4, 3, 2, 1, 0],
+            [1, 1, 2, 2 ,0],
+        ]
+        // function matrixArray(rows,columns){
+        // var arr = new Array();
+        // for(var i=0; i<rows; i++){
+        // arr[i] = new Array();
+        // for(var j=0; j<columns; j++){
+        // document.write(arr[i][j] = prompt("Введите элемент:") + "\t");
+        // }
+        // document.write("<br>")
+        // }
+        // return arr;
+        // }
+        // var myMatrix = matrixArray(3,3);
+        document.write(`Исходная матрица:<br><br>`)
+        for (let i = 0; i < 5; i++) {
+            for(let j = 0; j < 5; j++) {
+                document.write(`${matr[i][j]}  `);
+            }
+            document.write(`<br>`);
+        }
+        document.write(`<br>Изменённая матрица:<br><br>`)
+        //Изменил условие вывести элементы матрицы в диапозоне от 2 до 5
+        for (let i = 0; i < 5; i++) {
+            for(let j = 0; j < 5; j++) {
+                if (matr[i][j] >= 2 && matr[i][j] <=5) //(matr[i][j] >= -5 && matr[i][j] <= 7)
+                    document.write(`${matr[i][j]} `);
+                else
+                    document.write(`❗` + `  `);
+            }
+            document.write(`<br>`);
+        }
+    </script>
+</body>
+</html>

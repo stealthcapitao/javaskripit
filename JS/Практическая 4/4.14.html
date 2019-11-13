@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Практическая 4</title>
+</head>
+<body>
+    <script>
+        let K1 = +prompt("Введите число:"),
+            K2 = +prompt("Введите число:"),
+            K3 = +prompt("Введите число:"),
+            K4 = +prompt("Введите число:"),
+            K5 = +prompt("Введите число:");
+        function DigitN(K, N) {
+            if (K.toString().length < N)
+                return 1;
+            else
+                if ((Number.isInteger(K) == true) && (K > 0))
+                    return Math.floor((K/10 **(N-1))% 10);
+        }
+
+        for (let i = 1; i < 6; i++) {
+            let K = eval("K" + i);
+            for (var N = 1; N < 6; N++)
+                 document.write(`${N}-ая цифра в числе ${K} с конца	- ${DigitN(K, N)} <br>`);
+            document.write(`<br><br>`);
+        }
+        // alert(Math.floor(((76/10 **(3-1))% 10)));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let counter = prompt("Введите число"),
+            factorial = 1;
+        document.write("Факториал числа: " + counter + "! = ");
+        do {
+            if (counter == 0) {
+                factorial = 1;
+                break;
+            }
+        factorial = factorial * counter;
+        counter = counter - 1;
+        }
+        while (counter > 0);
+        document.write(factorial);
+    </script>
+</body>
+</html>

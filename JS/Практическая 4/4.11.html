@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Практическая 4</title>
+</head>
+<body>
+    <script>
+        function fuctorial(c) {
+            if (c == 1)
+                return 1;
+            else 
+                return c * fuctorial(c - 1);
+        }
+        let a = +prompt("Введите А:"),
+            b = +prompt("Введите В:");
+        let fuct = (fuctorial(a) + fuctorial(b)) / fuctorial(a);
+        alert(fuct);
+
+    </script>
+</body>
+</html>
