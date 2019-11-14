@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js3</title>
+</head>
+<body>
+	<script>
+// 		Даны целые числа K, N и набор из N вещественных чисел: А1, А2, … , АN. Вывести K-е степени чисел из данного набора: 
+// (А1)K, (А2)K, …,(АN)K.
+	let allNumbers = [];
+	let n = prompt("Сколько чисел вы хотите ввести?")
+	let degree = +prompt("В какую степень вы хотите перевести эти числа? = ");
+	let res = "";
+	
+	for (let i = 0; i < n; i++) {
+		allNumbers[i] = prompt("Введите число и оно будет переведенно в степень " + degree);
+		res+= "Число " + allNumbers[i] + " в степени " + degree + " = " + allNumbers[i] ** degree + "</br>";
+	}
+
+	document.write(res);
+
+
+	</script>
+</body>
+</html>

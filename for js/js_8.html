@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_8</title>
+</head>
+<body>
+	<!-- Дано целое число N (> 0). Используя операции деления нацело и взятия остатка от деления, вывести все его цифры, начиная с самой правой (разряда единиц). -->
+	<script>
+		
+		let n = +prompt("Введите число:"); 
+		document.write(`Вы ввели число = ${n} <br>`); 
+		while(n != 0) { 
+			document.write(`${n % 10}`); 
+			n = Math.floor(n / 10); 
+		}
+	</script>
+</body>
+</html>

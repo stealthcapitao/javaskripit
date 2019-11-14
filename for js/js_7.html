@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_7</title>
+</head>
+<body>
+	<!-- . Дано целое число N (> 1). Вывести наибольшее из целых чисел K, для которых сумма 1 + 2 + : : : + K будет меньше или равна N, и саму эту сумму. -->
+	<script>
+		let n = +prompt("Введите число = ");
+		let res = 0;
+		let maxNum = 0;
+
+		for (let i = 0; i <= n; i++) {
+
+			if ((res + i) > n) {
+				break;			
+			}
+			else {
+				res+=i;
+				if (i > maxNum) {
+					maxNum = i;
+				}	
+			}
+		}
+
+		alert("Сумма =  " + res + " до " + n );
+		alert("Наибольшее число =  " + maxNum);
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js13</title>
+</head>
+<body>
+	<!-- 	Создать игру для двоих:
+	1. Программа просит ввести число от 1 до 100 первого игрока (второй игрок не видит введенное число). Затем второго игрока просит угадать введенное число. В ответ выводится сообщение «мало» либо «много» в зависимости от введенного ответа. Если игрок угадывает, - выводится поздравление. Если не угадывает – игра продолжается.
+	2. Просчитывать число попыток и выдавать результат, когда число разгадано. -->
+	<script>
+		let allTries = 0;
+		let res;
+		let enterNum = +prompt("Введите число от 1 до 100");
+
+		while (true) {
+			let guessNum = +prompt("Угадайте число от 1 до 100");
+
+			if (isNaN(enterNum) || isNaN(guessNum)) {
+				res = "Вы ввели не число в одном из двух полей!";
+			}
+			else if (enterNum > 100 || enterNum < 1 || guessNum > 100 || guessNum < 1) {
+				res = "Больше 100 либо меньше 1";
+			}
+			else if (guessNum > enterNum) {
+				res = "Много";
+				allTries++;
+			}
+			else if (guessNum < enterNum) {
+				res = "Мало";
+				allTries++;
+			}
+			else if (guessNum == enterNum) {
+				res = "Поздравляю, вы угадали число! Загаданное число - " + enterNum;
+				allTries++;
+				break;
+			}
+			alert(res);
+		}
+
+		alert(res);
+		alert("Число попыток - " + allTries);
+
+	</script>
+</body>
+</html>

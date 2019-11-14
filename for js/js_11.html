@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js11</title>
+</head>
+<body>
+	<script>
+		// Модифицировать программу про ввод имени пользователем: запрашивать имя пользователя до тех пор, пока пользователь действительно введет имя (т.е. поле будет заполнено и не нажата клавиша cancel)
+
+		let name = "";
+
+		do{
+			name = prompt("Введите свое имя");
+
+			if (name && name != 'null') {
+				alert("Привет" + name);
+				break;
+			}
+		}while(true)
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js_1</title>
+</head>
+<body>
+	<!-- Дано число N и набор из N целых чисел. Вывести в том же порядке все четные числа из данного набора и количество K таких чисел.  -->
+	<script>
+
+		let m, n;
+		let res = "";
+		n = prompt("Введите длинну");
+		let quantity = 0;
+
+		for (let i = 0; i < n; i++) {
+			m = prompt("Введите число");
+			if (m % 2 == 0) {
+				res+=m + "  ";
+				quantity++;
+			}
+		}
+
+		if (res == "") {
+			res+=0;
+		}
+
+		document.write("Четные числа = " + res + "</br>");
+		document.write("Количество = " + quantity);
+	</script>
+</body>
+</html>

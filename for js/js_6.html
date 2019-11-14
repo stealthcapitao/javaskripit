@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js6</title>
+</head>
+<body>
+	<!-- Выполнить возведение х в степень y, используя цикл while. -->
+	<script>
+		let number = +prompt("Введите число: ");
+		let degree = +prompt("Возведите число в степень: ");
+		let solution = 1;
+		let i = 1;
+		
+		while (i <= degree) {
+			solution *= number;
+			i++;
+		}
+
+		alert("Ответ = " + solution);
+	</script>
+</body>
+</html>
